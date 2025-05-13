@@ -3,6 +3,7 @@ import Main from "./components/Main";
 import { useEffect, useState } from "react";
 import "./App.css";
 import { RestaurantContext } from "./context/RestaurantContext";
+// imported RestaurantContext from the context folder
 
 function App() {
   const [restaurantState, setRestaurants] = useState([]);
@@ -26,6 +27,7 @@ function App() {
   };
 
   return (
+    // wrapped whole return in a RestaurantContext Provider
     <RestaurantContext.Provider 
     value={{ 
       restaurants: restaurantState, 

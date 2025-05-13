@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useRestaurants } from "../context/RestaurantContext";
-
+// imported useRestaurants from RestaurantContext
 function AddRestaurant() {
+  // destructured updateRestaurants
   const { updateRestaurants } = useRestaurants();
   const [formData, setFormData] = useState({
     name: "",

@@ -1,3 +1,4 @@
+// created the context folder and then made RestaurantContext and useRestaurants
 import { createContext, useContext } from "react";
 
 export const RestaurantContext = createContext();

@@ -1,7 +1,8 @@
 import Restaurant from "./Restaurant";
 import { useRestaurants } from "../context/RestaurantContext";
-
+// imported useRestaurants from RestaurantContext
 function RestaurantsContainer() {
+  // destructured restaurants
   const { restaurants } = useRestaurants();
   return (
     <div className="restaurantContainer">
